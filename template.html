@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="{{LANG_CODE}}">
+<!-- {{BUILD_TIMESTAMP}} -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iaco.design | {{TAGLINE}}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="bg-accent">
+        <div class="container text-center">
+            <h1>iaco.design</h1>
+            <h2>{{TAGLINE}}</h2>
+        </div>
+    </header>
+
+    <main>
+        <!-- Unique Pieces Grid -->
+        <section id="unique-pieces" class="bg-white">
+            <div class="container">
+                <h2 class="text-center" style="margin-bottom: 2rem;">{{UNIQUE_TITLE}}</h2>
+                <div class="grid">
+                    {{GALLERY_GRID_UNIQUE}}
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me -->
+        <section id="about" class="bg-accent">
+            <div class="container text-center max-w-sm">
+                <p>{{ABOUT_TEXT}}</p>
+            </div>
+        </section>
+
+        <!-- Prints Grid -->
+        <section id="prints" class="bg-white">
+            <div class="container">
+                <h2 class="text-center" style="margin-bottom: 2rem;">{{PRINTS_TITLE}}</h2>
+                <div class="grid">
+                    {{GALLERY_GRID_PRINTS}}
+                </div>
+            </div>
+        </section>
+
+        <!-- Inquiry CTA -->
+        <section id="inquiry" class="bg-accent">
+            <div class="container text-center">
+                <h2>{{INQUIRY_TITLE}}</h2>
+                <p>{{INQUIRY_SUBTEXT}}</p>
+                <a href="mailto:studio@iacopino.ch?subject=Studio%20Inquiry" class="btn">{{INQUIRY_BTN}}</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white">
+        <div class="container flex-footer">
+            <p>&copy; <span id="year"></span> iaco.design</p>
+            <nav>
+                <a href="{{LANG_TOGGLE_URL}}">{{LANG_TOGGLE_TEXT}}</a>
+                <a href="legal.html">Impressum & Privacy Policy</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', function() {
+                this.classList.toggle('is-flipped');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- BUILD DEPLOYMENT: 2026-08-28 13:05:22 UTC -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iaco.design | fine art studio zurich</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="bg-accent">
+        <div class="container text-center">
+            <h1>iaco.design</h1>
+            <h2>fine art studio zurich</h2>
+        </div>
+    </header>
+
+    <main>
+        <!-- Unique Pieces Grid -->
+        <section id="unique-pieces" class="bg-white">
+            <div class="container">
+                <h2 class="text-center" style="margin-bottom: 2rem;">Original Works</h2>
+                <div class="grid">
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me -->
+        <section id="about" class="bg-accent">
+            <div class="container text-center max-w-sm">
+                <p>Taking the time to appreciate the small hidden wonders of nature has always brought me a sense of peace and gratefulness for the beauty around us. My work grows out of that: Close observation of structures the world offers abundantly, composed in symmetrical and sometimes unexpected ways. What I hope to pass on, along with each piece, is a little of that same stillness. A reminder to slow down and notice.</p>
+            </div>
+        </section>
+
+        <!-- Prints Grid -->
+        <section id="prints" class="bg-white">
+            <div class="container">
+                <h2 class="text-center" style="margin-bottom: 2rem;">Archival Prints</h2>
+                <div class="grid">
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Inquiry CTA -->
+        <section id="inquiry" class="bg-accent">
+            <div class="container text-center">
+                <h2>Studio Inquiries</h2>
+                <p>For custom commissions, collaborations, or general questions.</p>
+                <a href="mailto:studio@iacopino.ch?subject=Studio%20Inquiry" class="btn">Contact the Studio</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white">
+        <div class="container flex-footer">
+            <p>&copy; <span id="year"></span> iaco.design</p>
+            <nav>
+                <a href="index-de.html">DE</a>
+                <a href="legal.html">Impressum & Privacy Policy</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', function() {
+                this.classList.toggle('is-flipped');
+            });
+        });
+    </script>
+</body>
+</html>
