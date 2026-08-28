@@ -14,19 +14,23 @@ translations = {
         'INQUIRY_SUBTEXT': 'For custom commissions, collaborations, or general questions.',
         'INQUIRY_BTN': 'Contact the Studio',
         'LANG_TOGGLE_URL': 'index-de.html',
-        'LANG_TOGGLE_TEXT': 'DE'
+        'LANG_TOGGLE_TEXT': 'DE',
+        'LEGAL_URL': 'legal.html',
+        'LEGAL_TEXT': 'Impressum & Privacy Policy'
     },
     'de': {
         'LANG_CODE': 'de',
         'TAGLINE': 'fine art studio zürich',
         'UNIQUE_TITLE': 'Originalwerke',
         'PRINTS_TITLE': 'Kunstdrucke',
-        'ABOUT_TEXT': 'Schon immer schöpfe ich viel Ruhe und Dankbarkeit aus der Natur um mich herum. Meine Arbeit widmet sich dem Beobachten manchmal verborgener, manchmal offensichtlicher Muster und Strukturen, sowie der Wiedergabe und Neukombination ihrer Symmetrien. Was ich mit jedem Stück weitergeben möchte, ist ein wenig von dieser Stille. Eine Erinnerung, innezuhalten und genau hinzusehen.',
+        'ABOUT_TEXT': 'Sich die Zeit zu nehmen, die kleinen verborgenen Wunder der Natur zu schätzen, hat mir schon immer ein Gefühl des Friedens gebracht. Meine Arbeit wächst daraus: Die genaue Beobachtung von Strukturen, die die Welt in Fülle bietet, zusammengesetzt auf symmetrische und manchmal unerwartete Weise. Was ich mit jedem Stück weitergeben möchte, ist ein wenig von dieser Stille. Eine Erinnerung daran, innezuhalten und wahrzunehmen.',
         'INQUIRY_TITLE': 'Studio Anfragen',
         'INQUIRY_SUBTEXT': 'Für individuelle Aufträge, Kooperationen oder allgemeine Fragen.',
         'INQUIRY_BTN': 'Studio Kontaktieren',
         'LANG_TOGGLE_URL': 'index.html',
-        'LANG_TOGGLE_TEXT': 'EN'
+        'LANG_TOGGLE_TEXT': 'EN',
+        'LEGAL_URL': 'legal-de.html',
+        'LEGAL_TEXT': 'Impressum & Datenschutz'
     }
 }
 

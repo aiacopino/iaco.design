@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal & Privacy | IACO.DESIGN</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .legal-content h2 { color: var(--onyx); margin-top: 2rem; margin-bottom: 1rem; font-weight: 600; }
+        .legal-content h3 { font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+        .legal-content p { margin-bottom: 1.5rem; color: var(--slate); font-size: 0.95rem; }
+        .legal-content a { color: var(--onyx); font-weight: 600; }
+        .logo-link { text-decoration: none; color: inherit; display: block; }
+    </style>
+</head>
+<body>
+    <header class="bg-accent">
+        <div class="container text-center">
+            <a href="index.html" class="logo-link">
+                <h1>IACO.DESIGN</h1>
+                <h2>fine art studio zurich</h2>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-white">
+            <div class="container legal-content" style="max-width: 700px; text-align: left;">
+                <h2>Impressum (Imprint)</h2>
+                <p>
+                    <strong>Operator & Contact:</strong><br>
+                    Iacopino Services<br>
+                    UID CHE-252.604.577<br>
+                    Alessandra Iacopino<br>
+                    <strong>Email:</strong> <a href="mailto:studio@iacopino.ch">studio@iacopino.ch</a>
+                </p>
+
+                <h3>Copyright</h3>
+                <p>All artworks, images, designs, and texts on this website are the intellectual property of Alessandra Iacopino. Unauthorized copying, reproduction, or commercial use is strictly prohibited without prior written consent.</p>
+
+                <h2>Privacy Policy</h2>
+                <h3>1. General Handling of Data</h3>
+                <p>This website operates as a purely static digital portfolio. We respect your privacy and do not use invasive tracking, marketing cookies, or analytics tools (such as Google Analytics).</p>
+                
+                <h3>2. Contacting the Studio</h3>
+                <p>We do not use a server-side contact form. When you click an inquiry button, your personal email client opens. Any personal data you choose to send (like your name or email address) is solely processed via standard email infrastructure to answer your request. It is not stored in a web database or shared with third parties.</p>
+                
+                <h3>3. Hosting Infrastructure</h3>
+                <p>This website is hosted securely on GitHub Pages (Microsoft). For the purpose of delivering the site to your browser and maintaining network security, GitHub's servers automatically log technical data, such as your IP address, browser type, and timestamp. This data is handled in accordance with <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank">GitHub's Privacy Statement</a>.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white">
+        <div class="container flex-footer">
+            <p>&copy; <span id="year"></span> IACO.DESIGN</p>
+            <nav>
+                <a href="legal-de.html">DE</a>
+                <a href="index.html">Back to Gallery</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
