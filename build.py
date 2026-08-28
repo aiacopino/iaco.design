@@ -30,7 +30,7 @@ translations = {
     }
 }
 
-def generate_mailto(title, price):
+def generate_mailto(title, price): #this should be adapted to german as well
     subject = urllib.parse.quote(f"Purchase Inquiry: {title}")
     body = urllib.parse.quote(f"Hello,\n\nI would like to inquire about purchasing '{title}' ({price}).\n\nPlease let me know the next steps.")
     return f"mailto:studio@iacopino.ch?subject={subject}&body={body}"
@@ -40,7 +40,7 @@ def generate_grid_html(df_filtered):
     for _, row in df_filtered.iterrows():
         status = str(row['status']).strip()
         is_sold = status.upper() == 'SOLD'
-        
+        # SOLD should be changed to VERKAUFT on the german page
         button_html = '<span class="btn sold">SOLD</span>' if is_sold else f'<a href="{generate_mailto(row["title"], status)}" class="btn">Inquire / {status}</a>'
 
         grid_html += f"""
