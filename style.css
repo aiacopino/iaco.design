@@ -60,7 +60,7 @@ h2 { font-size: 1.25rem; color: var(--slate); font-weight: 400; }
 /* Gallery Grid */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 3rem;
 }
 
@@ -70,6 +70,9 @@ h2 { font-size: 1.25rem; color: var(--slate); font-weight: 400; }
     aspect-ratio: 1 / 1.414; /* A-series paper ratio */
     perspective: 1000px;
     cursor: pointer;
+    width: 100%;
+    max-width: calc(60vh / 1.414); /* cap height to 60% of viewport height */
+    margin: 0 auto;
 }
 
 .card-inner {
@@ -79,7 +82,7 @@ h2 { font-size: 1.25rem; color: var(--slate); font-weight: 400; }
     text-align: center;
     transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     transform-style: preserve-3d;
-    will-change: transform;
+    /* will-change: transform; */
 }
 
 /* Desktop hover */
